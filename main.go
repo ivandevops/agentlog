@@ -5,6 +5,7 @@ import (
 	"agentlog/etcd"
 	"agentlog/kafka"
 	"agentlog/log"
+	"agentlog/server"
 	"agentlog/tailf"
 	"fmt"
 	"github.com/astaxie/beego/logs"
@@ -57,14 +58,13 @@ func main() {
 	}
 	logs.Debug("initialize all succ")
 
-	//
-	//
-	//err = server.ServerRun()										//调用已经初始化的组件，向kafka里发送数据
-	//if err != nil {
-	//	logs.Error("serverRUn failed, err:%v", err)
-	//	return
-	//}
-	//logs.Info("program exited")
+
+	err = server.ServerRun()										//调用已经初始化的组件，向kafka里发送数据
+	if err != nil {
+		logs.Error("serverRUn failed, err:%v", err)
+		return
+	}
+	logs.Info("program exited")
 
 }
 

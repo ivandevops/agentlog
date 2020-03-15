@@ -22,7 +22,8 @@ func ServerRun() (err error) {
 }
 
 func sendToKafka(msg *tailf.TextMsg) (err error) {
-	fmt.Printf("read msg:%s, topic:%s\n", msg.Msg, msg.Topic)
+	fmt.Println(msg.Msg)
+	fmt.Printf("topic: %s\n", msg.Topic)
 	err = kafka.SendToKafka(msg.Msg, msg.Topic)
 	return
 }

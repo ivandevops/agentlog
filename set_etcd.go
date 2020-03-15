@@ -28,20 +28,20 @@ func SetLogConfToEtcd() {
 	fmt.Println("connect succ")
 	defer cli.Close()
 
-
+		//
 		//var logConfArr []tailf.CollectConf
 		//logConfArr = append(
 		//	logConfArr,
 		//	tailf.CollectConf{
-		//		LogPath: "D:/project/logs/logagent.log",
-		//		Topic:   "nginx_log",
+		//		LogPath: "E:/log/bbb.txt",
+		//		Topic:   "bbb_nginx_log",
 		//	},
 		//)
 		//logConfArr = append(
 		//	logConfArr,
 		//	tailf.CollectConf{
-		//		LogPath: "D:/project/nginx/logs/error2.log",
-		//		Topic:   "nginx_log_err",
+		//		LogPath: "E:/log/sss.txt",
+		//		Topic:   "sss_nginx_log_err",
 		//	},
 		//)
 		//
@@ -50,27 +50,27 @@ func SetLogConfToEtcd() {
 		//	fmt.Println("json failed, ", err)
 		//	return
 		//}
-		//
-		//ctx, cancel := context.WithTimeout(context.Background(), time.Second)
-		////cli.Delete(ctx, EtcdKey)
-		////return
+
+		ctx, cancel := context.WithTimeout(context.Background(), time.Second)
+		cli.Delete(ctx, EtcdKey)
+		return
 		//_, err = cli.Put(ctx, EtcdKey, string(data))
-		//cancel()
+		cancel()
 		//if err != nil {
 		//	fmt.Println("put failed, err:", err)
 		//	return
 		//}
 
-	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
-	resp, err := cli.Get(ctx, EtcdKey)
-	cancel()
-	if err != nil {
-		fmt.Println("get failed, err:", err)
-		return
-	}
-	for _, ev := range resp.Kvs {
-		fmt.Printf("%s : %s\n", ev.Key, ev.Value)
-	}
+	//ctx, cancel := context.WithTimeout(context.Background(), time.Second)
+	//resp, err := cli.Get(ctx, EtcdKey)
+	//cancel()
+	//if err != nil {
+	//	fmt.Println("get failed, err:", err)
+	//	return
+	//}
+	//for _, ev := range resp.Kvs {
+	//	fmt.Printf("%s : %s\n", ev.Key, ev.Value)
+	//}
 }
 
 func main() {
