@@ -1,0 +1,33 @@
+2020/03/15 22:28:41.517 [D]  load conf succ, config:&{1 log/agent.log 10 192.168.1.136:9092 [{/usr/local/nginx/logs/access.log nginx_access_log}] 192.168.1.136:2379 /oldboy/backend/logagent/config 192.168.1.237}
+2020/03/15 22:28:41.522 [D]  resp from etcd:[key:"/oldboy/backend/logagent/config/192.168.1.237" create_revision:12 mod_revision:12 version:1 value:"[{\"logpath\":\"D:/project/logs/logagent.log\",\"topic\":\"nginx_log\"},{\"logpath\":\"D:/project/nginx/logs/error2.log\",\"topic\":\"nginx_log_err\"}]" ]
+2020/03/15 22:28:41.522 [D]  log config is [{D:/project/logs/logagent.log nginx_log} {D:/project/nginx/logs/error2.log nginx_log_err}]
+2020/03/15 22:28:41.522 [D]  initialize etcd succ
+2020/03/15 22:29:02.446 [D]  load conf succ, config:&{1 log/agent.log 10 192.168.1.136:9092 [{/usr/local/nginx/logs/access.log nginx_access_log}] 192.168.1.136:2379 /oldboy/backend/logagent/config 192.168.1.237}
+2020/03/15 22:29:02.449 [D]  resp from etcd:[key:"/oldboy/backend/logagent/config/192.168.1.237" create_revision:12 mod_revision:12 version:1 value:"[{\"logpath\":\"D:/project/logs/logagent.log\",\"topic\":\"nginx_log\"},{\"logpath\":\"D:/project/nginx/logs/error2.log\",\"topic\":\"nginx_log_err\"}]" ]
+2020/03/15 22:29:02.449 [D]  log config is [{D:/project/logs/logagent.log nginx_log} {D:/project/nginx/logs/error2.log nginx_log_err}]
+2020/03/15 22:29:02.449 [D]  initialize etcd succ
+2020/03/15 22:29:02.449 [D]  initialize tailf succ
+2020/03/15 22:31:12.335 [D]  load conf succ, config:&{1 log/agent.log 10 192.168.1.136:9092 [{/usr/local/nginx/logs/access.log nginx_access_log}] 192.168.1.136:2379 /oldboy/backend/logagent/config 192.168.1.237}
+2020/03/15 22:31:12.438 [D]  resp from etcd:[key:"/oldboy/backend/logagent/config/192.168.1.237" create_revision:12 mod_revision:12 version:1 value:"[{\"logpath\":\"D:/project/logs/logagent.log\",\"topic\":\"nginx_log\"},{\"logpath\":\"D:/project/nginx/logs/error2.log\",\"topic\":\"nginx_log_err\"}]" ]
+2020/03/15 22:31:12.438 [D]  log config is [{D:/project/logs/logagent.log nginx_log} {D:/project/nginx/logs/error2.log nginx_log_err}]
+2020/03/15 22:31:12.438 [D]  initialize etcd succ
+2020/03/15 22:31:12.438 [D]  initialize tailf succ
+2020/03/15 22:31:12.449 [D]  begin watch key:/oldboy/backend/logagent/config/192.168.1.237
+2020/03/15 22:31:12.697 [D]  init kafka succ
+2020/03/15 22:31:12.697 [D]  initialize all succ
+2020/03/15 22:36:30.070 [D]  load conf succ, config:&{1 log/agent.log 10 192.168.1.136:9092 [] 192.168.1.136:2379 /oldboy/backend/logagent/config 192.168.1.237}
+2020/03/15 22:36:30.074 [D]  resp from etcd:[key:"/oldboy/backend/logagent/config/192.168.1.237" create_revision:12 mod_revision:12 version:1 value:"[{\"logpath\":\"D:/project/logs/logagent.log\",\"topic\":\"nginx_log\"},{\"logpath\":\"D:/project/nginx/logs/error2.log\",\"topic\":\"nginx_log_err\"}]" ]
+2020/03/15 22:36:30.074 [D]  log config is [{D:/project/logs/logagent.log nginx_log} {D:/project/nginx/logs/error2.log nginx_log_err}]
+2020/03/15 22:36:30.074 [D]  initialize etcd succ
+2020/03/15 22:36:30.074 [D]  initialize tailf succ
+2020/03/15 22:36:30.104 [D]  begin watch key:/oldboy/backend/logagent/config/192.168.1.237
+2020/03/15 22:36:30.154 [D]  init kafka succ
+2020/03/15 22:36:30.154 [D]  initialize all succ
+2020/03/15 22:40:27.124 [D]  load conf succ, config:&{1 log/agent.log 10 192.168.1.136:9092 [] 192.168.1.136:2379 /oldboy/backend/logagent/config 192.168.1.237}
+2020/03/15 22:40:27.127 [D]  resp from etcd:[key:"/oldboy/backend/logagent/config/192.168.1.237" create_revision:12 mod_revision:12 version:1 value:"[{\"logpath\":\"D:/project/logs/logagent.log\",\"topic\":\"nginx_log\"},{\"logpath\":\"D:/project/nginx/logs/error2.log\",\"topic\":\"nginx_log_err\"}]" ]
+2020/03/15 22:40:27.127 [D]  log config is [{D:/project/logs/logagent.log nginx_log} {D:/project/nginx/logs/error2.log nginx_log_err}]
+2020/03/15 22:40:27.127 [D]  initialize etcd succ
+2020/03/15 22:40:27.127 [D]  initialize tailf succ
+2020/03/15 22:40:27.128 [D]  begin watch key:/oldboy/backend/logagent/config/192.168.1.237
+2020/03/15 22:40:27.135 [D]  init kafka succ
+2020/03/15 22:40:27.135 [D]  initialize all succ
